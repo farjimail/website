@@ -1,0 +1,558 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  padding: 1rem;
+  background: #89216b;
+}
+.logo {
+  font-size: 2.3rem;
+  color: white;
+}
+.nav-links {
+  display: flex;
+}
+.nav-links li {
+  margin-right: 20px;
+}
+.nav-links li a {
+  color: #fff;
+  padding: 10px;
+}
+.nav-links li a:hover {
+  background-color: white;
+  color: #da4453;
+}
+input {
+  display: none;
+}
+.menu-btn {
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(/assets/hero.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  padding: 9%;
+}
+.left h1 {
+  padding: 9% 0 3rem 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: monospace;
+}
+.left p {
+  color: #fff;
+  font-size: 1rem;
+}
+.btn {
+  padding: 40px 0;
+}
+.btn a {
+  font-size: 1.4rem;
+  padding: 15px 20px;
+  border-radius: 0.4em;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn a:hover {
+  background-color: black;
+  color: wheat;
+}
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5rem;
+  padding: 4rem;
+  background-color: rgb(229, 229, 229);
+}
+.leftabout h3 {
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+.leftabout h1 {
+  padding: 1rem;
+  font-size: 2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.leftabout p {
+  padding: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: lighter;
+}
+.leftabout .btn {
+  padding: 3rem 1rem;
+}
+.leftabout .btn a {
+  background-color: black;
+  color: wheat;
+}
+.leftabout .btn a:hover {
+  background-color: rgb(239, 194, 65);
+  color: white;
+}
+.middle {
+  padding: 2rem;
+  background-color: rgb(239, 194, 65);
+  border-radius: 1.6rem;
+}
+.middle h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.middle p {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.3rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.right {
+  padding: 2rem;
+  background-color: rgb(118, 154, 90);
+  border-radius: 1.6rem;
+}
+.right h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.right p {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.3rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.way {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/f337ee11-a48b-486b-8247-89f6e05803f5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.way h1 {
+  font-size: 4rem;
+  color: #fff;
+  padding: 4rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: lighter;
+}
+.way p {
+  color: white;
+  padding: 2rem 0 0 4rem;
+  font-size: 1.5rem;
+}
+.way .btn {
+  padding: 1.9rem 4rem 0;
+}
+.let {
+  width: 100%;
+  height: auto;
+  background-color: rgb(229, 229, 229);
+}
+.let h1 {
+  font-size: 3rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem;
+  gap: 5rem;
+  justify-content: center;
+}
+.box-0 {
+  background-color: #fff;
+  width: 20rem;
+  height: 25rem;
+  border-radius: 2rem;
+}
+.box-0 p ,.box-1 p ,.box-2 p, .box-3 p, .box-4 p, .box-5 p{
+    font-size: 1.3rem;
+    text-align: center;
+}
+.box-0 h1 ,.box-1 h1 , .box-2 h1 , .box-3 h1 ,.box-4 h1 , .box-5 h1{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+span img{
+    background-size: cover;
+    height: 250px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 3rem;
+}
+.box-1 {
+  background-color: #fff;
+  width: 20rem;
+  height: 25rem;
+  border-radius: 2rem;
+}
+.box-2 {
+  background-color: #fff;
+  width: 20rem;
+  height: 25rem;
+  border-radius: 2rem;
+}
+.box-3 {
+  background-color: #fff;
+  width: 20rem;
+  height: 25rem;
+  border-radius: 2rem;
+}
+.box-4 {
+  background-color: #fff;
+  width: 20rem;
+  height: 25rem;
+  border-radius: 2rem;
+}
+.box-5 {
+  background-color: #fff;
+  width: 20rem;
+  height: 25rem;
+  border-radius: 2rem;
+}
+.tips{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    background-color: rgb(252, 157, 51);
+}
+.leftside img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.rightside h1{
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 3rem 3rem 0;
+}
+.rightside p{
+    font-size: 1.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding:1rem 3rem 0;
+}
+.rightside .btn-12{
+    padding: 1rem 3rem  ;
+}
+.rightside .btn-12 a{
+  color: #fff;
+  background-color: black;
+  padding: 1rem;
+  border-radius: .2rem;
+}
+.rightside .btn-12 a:hover{
+  background-color: rgb(118, 154, 90) ;
+  color: black;
+}
+.ben{
+    background-color: rgb(229, 229, 229);
+    height: auto;
+    width: 100%;
+}
+.rectangle{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px , 1fr));
+    padding: 5rem;
+    gap: 5rem;
+}
+.rectangle span{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: .1rem;
+}
+.rectangle i{
+    font-weight: bold;
+    padding: 1rem;
+}
+.rectangle-1{
+    background-color: rgb(118, 154, 90);
+    border-radius: .3rem;
+    height: 60vh;
+}
+.rectangle-1 h1{
+    font-size: 2rem;
+    text-transform: none;
+    padding: 4rem .3rem 2rem 0;
+    text-align: center;
+}
+.rectangle-1 .re{
+    padding: 3rem;
+
+}
+.re a{
+  border-radius: .4rem;
+  color: #fff;
+  padding: 1rem;
+  background-color: black;
+}
+.re a:hover{
+  background-color: rgb(182, 182, 95);
+  color: black;
+}
+.rectangle-2{
+    background-color: #fff;
+    border-radius: .3rem;
+}
+.rectangle-2 i{
+    color: green;
+}
+.rectangle-3{
+    background-color: rgb(239, 194, 65);
+    border-radius: .3rem;
+}
+.rectangle-3{
+    padding: 2rem;
+}
+.rectangle-3 p{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    font-family: initial;
+}
+.about-page{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+  background-color: rgb(118, 154, 90);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-left h1{
+  padding: 8rem 4rem 0;
+  color: #fff;
+  font-size:3rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+}
+.about-left p{
+  color:#fff;
+  padding: 1rem 4rem 0;
+}
+.about-left .btn-about{
+  padding: 4rem;
+}
+.about-left .btn-about a{
+  color:black ;
+  background-color:#fff ;
+  padding: 1.4rem 1rem;
+  border-radius: .3rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.about-left .btn-about a:hover{
+  background-color: black;
+  color: white;
+}
+.about-right img{
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.last-right{
+  background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+.contact-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: center;
+}
+
+.contact-form h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.contact-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.contact-form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.contact-form .terms {
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.contact-form .terms a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.contact-form .terms a:hover {
+  text-decoration: underline;
+}
+
+.contact-form .submit-btn {
+  width: 100%;
+  background-color: #6CA24A;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form .submit-btn:hover {
+  background-color: #5a8a3c;
+}
+.last{
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 2rem;
+}
+.left-last h1{
+  color: #fff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.left-last p{
+  color: #fff;
+  padding: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.left-last .btn-lst a{
+  color: #fff;
+  padding: 1rem;
+  background-color: #5a8a3c;
+  border-radius: .3rem;
+}
+.left-last .btn-lst{
+  padding: 1rem;
+}
+.left-last .btn-lst a:hover{
+  color: black;
+  background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 650px) {
+  .menu-btn {
+    display: block;
+  }
+  #check:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  .nav-links {
+    display: block;
+    width: 70%;
+    left: -100%;
+    top: 73px;
+    position: fixed;
+    text-align: center;
+    background-color: #cf3f56;
+    height: 100vh;
+    transition: all 0.4s ease;
+    padding: 20px;
+    scroll-behavior: smooth;
+  }
+  .nav-links li {
+    margin: 20px;
+    padding: 20px;
+  }
+  #check:checked ~ .nav-links {
+    left: 0;
+  }
+}
+@media (max-width:990px ){
+  .tips{
+    display: block;
+  }
+}
+@media (max-width: 1040px){
+  .about-page{
+    display: block;
+  }
+}
+@media (max-width: 770px){
+  .last{
+    display: block;
+  }
+  .last-right{
+    padding: 2rem;
+  }
+}
